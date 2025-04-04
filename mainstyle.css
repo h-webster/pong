@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Boldonse", system-ui;
+}
+
+.main-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
+    color: white;
+}
+.main-page * {
+    margin: 0px;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.button-container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.button-container button {
+    border: 0;
+    border-radius: 50%;
+    background-color: rgb(87, 87, 87);
+    height: 7vw;
+    width: 13vw;
+    color: white;
+    font-size: 1.5vw;
+    transition: transform 0.2s ease-in-out;
+}
+
+.button-container button:hover {
+    transform: scale(1.05);
+}
