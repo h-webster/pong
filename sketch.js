@@ -39,7 +39,9 @@ class Ball {
     this.vy = vy;
   }
   Render() {
+    fill(255, 0, 0);
     circle(this.x, this.y, this.r);
+    fill(255, 255, 255);
   }
   Simulate() {
     this.x += this.vx;
